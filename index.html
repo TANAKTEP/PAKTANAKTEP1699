@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form with All Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-container h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="checkbox"], .form-group input[type="radio"] {
+            width: auto;
+        }
+        .form-group input[type="submit"], .form-group input[type="reset"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"]:hover, .form-group input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Form with All Elements</h1>
+        <form action="/submit-form" method="post">
+            <!-- Text Input -->
+            <div class="form-group">
+                <label for="text">Text Input:</label>
+                <input type="text" id="text" name="text" placeholder="Enter text here">
+            </div>
+            
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            
+            <!-- Number Input -->
+            <div class="form-group">
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number" min="1" max="100">
+            </div>
+            
+            <!-- Date Input -->
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            
+            <!-- Time Input -->
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time">
+            </div>
+            
+            <!-- URL Input -->
+            <div class="form-group">
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" placeholder="https://example.com">
+            </div>
+            
+            <!-- Telephone Input -->
+            <div class="form-group">
+                <label for="tel">Telephone:</label>
+                <input type="tel" id="tel" name="tel" placeholder="123-456-7890">
+            </div>
+            
+            <!-- Color Input -->
+            <div class="form-group">
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+            
+            <!-- Range Input -->
+            <div class="form-group">
+                <label for="range">Range:</label>
+                <input type="range" id="range" name="range" min="0" max="100">
+            </div>
+            
+            <!-- Checkbox Input -->
